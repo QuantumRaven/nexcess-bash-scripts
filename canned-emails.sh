@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##################################p
+##################################
 # Author: Chloe Carpenter
 # Creation date: 2022-10-15
 # Purpose: Canned email responses
