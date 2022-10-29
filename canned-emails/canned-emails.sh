@@ -11,7 +11,6 @@ handle_err() {
     local s=$?
     echo "$0:${BASH_LINENO[0]} $BASH_COMMAND"
     exit "$s"
-
 }
 
 trap handle_err ERR
