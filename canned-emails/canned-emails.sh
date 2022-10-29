@@ -109,7 +109,7 @@ ${name},
 
 Thank you for contacting ${support} support!
 
-My name is [name] and I will be helping you with your inquiry for ${domain}.
+My name is {name} and I will be helping you with your inquiry for ${domain}.
 
 ${issue}
 
@@ -144,7 +144,7 @@ read -rep "Customer name or use team: " name
 xclip -selection clipboard <<EOF
 ${name},
 
-My name is [name] and I'll be picking up where my colleagues left off.
+My name is {name} and I'll be picking up where my colleagues left off.
 
 If it becomes necessary, I'll contact you with any questions or requests for further information.
 
