@@ -67,6 +67,8 @@ Upon conferring with my colleagues, I confirmed the following:
 
 ${FOLLOWUP}
 
+If you need further assistance, please reach out by directly responding to this email and I or my colleagues would be happy to answer any additional questions.
+
 [add signature]
 EOF
 }
@@ -139,7 +141,7 @@ I'm glad we were able to assist.
 
 As the original issue has been fixed, I'll mark the ticket as resolved.
 
-If you have any additional questions, please feel free to reach out by responding to this email.
+If you need further assistance, please reach out by directly responding to this email and I or my colleagues would be happy to answer any additional questions.
 
 [add signature]
 EOF
@@ -165,7 +167,7 @@ PS3='
 Which email response do you wish to provide? '
 options=("Apology - Apologize for any delays" "Authentication - Request auth from customer" "Initial response - For live interaction tickets or tickets listed as New" "Information request - Start time, replication steps, etc." "Follow up - Provide customer with findings" "Picking up - Picking up case" "Resolve - Original issue fixed" "Thanks - Thank for additional info")
 select _ in "${options[@]}"; do
-  case $REPLY in
+  case "${REPLY}" in
   1)
     apology
     exit
