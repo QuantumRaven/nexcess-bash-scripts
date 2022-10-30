@@ -192,7 +192,7 @@ menu() {
     printf "
     ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
     │1. Apology - Apologize for any delays                                                                               │
-    │2. authorization - Request auth from customer                                                                       │
+    │2. Authorization - Request auth from customer                                                                       │
     │3. Follow-up - Provide customer with findings                                                                       │
     │4. Initial response - For live interaction tickets or tickets listed as New                                         │
     │5. Information request - Start time, replication steps, etc.                                                        │
