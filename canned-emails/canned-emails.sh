@@ -15,29 +15,6 @@ handle_err() {
 
 trap handle_err ERR
 
-#########
-# Colors
-#########
-
-# Reset color
-rc="\033[0m"
-
-# Regular colors
-black="\033[0;30m"
-red="\033[0;31m"
-green="\033[0;32m"
-yellow="\033[0;33m"
-blue="\033[0;34m"
-purple="\033[0;35m"
-cyan="\033[0;36m"
-white="\033[0;37m"
-lred="\033[91m"
-lblue="\033[94m"
-white="\033[97m"
-green="\033[92m"
-lgreen="\033[36m"
-yellow="\033[33m"
-
 ##################
 # Email functions
 ##################
@@ -190,18 +167,18 @@ EOF
 menu() {
     clear
     printf "
-    ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-    │1. Apology - Apologize for any delays                                                                               │
-    │2. Authorization - Request auth from customer                                                                       │
-    │3. Follow-up - Provide customer with findings                                                                       │
-    │4. Initial response - For live interaction tickets or tickets listed as New                                         │
-    │5. Information request - Start time, replication steps, etc.                                                        │
-    │6. Picking up - Let customer know ticket is being picked up                                                         │
-    │7. Reslve - All issues have been fixed                                                                              │
-    │8. Thanks - Thank customer for additional info                                                                      │
-    └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │1. Apology - Apologize for any delays                                                                                │
+    │2. Authorization - Request auth from customer                                                                        │
+    │3. Follow-up - Provide customer with findings                                                                        │
+    │4. Initial response - For live interaction tickets or tickets listed as New                                          │
+    │5. Information request - Start time, replication steps, etc.                                                         │
+    │6. Picking up - Let customer know ticket is being picked up                                                          │
+    │7. Resolve - All issues have been fixed                                                                              │
+    │8. Thanks - Thank customer for additional info                                                                       │
+    └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
     \n"
-    read -rp "Which email response do you wish to use? "
+    read -rep "Which email response do you wish to use? "
     case "${REPLY}" in
         1)
             apology
